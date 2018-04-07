@@ -1,0 +1,25 @@
+function construirTabla() {
+
+	var talla = document.getElementById("talla").value;
+	var genero = document.getElementById("genero").value;
+	var color = document.getElementById("color").value;
+	var precio = document.getElementById("precio").value;
+	var moda = document.getElementById("moda").value;
+	var fila = "<tr><td>"+talla+"</td><td>"+genero+"</td><td>"+color+"</td><td>"+precio+"</td><td>"+moda+"</td></tr>"
+	var crear = document.createElement("TR");
+	crear.innerHTML=fila;
+	document.getElementById("tabla").appendChild(crear);
+	var pos = fila.myFunction(this);
+}
+ 
+
+
+
+
+
+function deleteRow(rowButton) {
+        var pos = rowButton.parentNode.parentNode.rowIndex;
+
+        document.getElementById("tabla").deleteRow(pos);
+    }
+  
