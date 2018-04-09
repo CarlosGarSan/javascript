@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario articulos ropa</title>
+        <meta charset="utf-8">  
+        <link rel="stylesheet" href="./css/Formulario_ropa.css">
+    </head>
+    <body>   
+            <div>
+      <h2>Registro de Articulos de ropa</h2>          
+                <form onsubmit="">
+                <p>Talla:
+    <select id="talla" name="talla" style="width: 60px">    
+        <option id="XS">XS</option>
+        <option id="S">S</option>
+        <option id="M">M</option>
+        <option id="L">L</option>
+        <option id="XL">XL</option>
+    </select>
+                <P>Genero:
+    <input id="genero" style="margin:10px" type="text"></P>
+               
+                <P>Color:
+    <input id="color" style="margin:10px" type="text"></P>
+
+                <P>Precio:
+    <input id="precio" style="margin:10px" type="number"></P>
+
+                <p>Moda: 
+        <select id="moda" name="moda" style="width: 60px">    
+        <option id="Primavera">Primavera</option>
+        <option id="Verano">Verano</option>
+        <option id="Otoño">Otoño</option>
+        <option id="Invierno">Invierno</option>
+        
+    </select>            
+     <!-- <input id="moda" style="margin:10px" type="text"> -->
+                </p>
+                
+                </form>
+                
+                <div>
+                <button class = "button registrar" onclick="construirTabla();">Registrar</button>
+                <button class = "button editar" onclick="editar();">Editar</button>
+                <button class = "button borrar" onclick="borrar();">Borrar</button>
+                
+                </div>
+
+            </div>
+        
+             <div>
+               <h2 align="center">Listado de Articulos de ropa</h2>
+               <table id="tabla" align="center" >
+                    <tr>
+                        <th>Talla</th>
+                        <th>Genero</th>
+                        <th>Color</th>
+                        <th>Precio</th>
+                        <th>Moda</th>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>Seda </td>
+                        <td>Verde</td>
+                        <td>12,95€</td>
+                        <td>Verano</td>
+                    </tr>
+                     <tr>
+                        <td>L</td>
+                        <td>Tela vegetal</td>
+                        <td>Rojo</td>
+                        <td>19,95€</td>
+                        <td>Primavera</td>
+                    </tr>
+                     <tr>
+                        <td>M</td>
+                        <td>Algodón</td>
+                        <td>Azul</td>
+                        <td>24,99€</td>
+                        <td>Invierno</td>
+                    </tr> 
+                        <tr>
+                        <td>XL</td>
+                        <td>Cuero</td>
+                        <td>Marrón</td>
+                        <td>44,99€</td>
+                        <td>Otoño</td>
+                    </tr>    
+                </table>
+            </div>
+         
+    </body>
+    <script type="text/javascript" src="./js/Formulario_ropa.js"></script>
+</html>
